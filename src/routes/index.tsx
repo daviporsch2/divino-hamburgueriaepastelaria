@@ -8,6 +8,7 @@ import logoAsset from "@/assets/divino-logo.png.asset.json";
 
 const IFOOD_URL =
   "https://www.ifood.com.br/delivery/parnaiba-pi/divino-hamburgueria-nossa-senhora-de-fatima/bc4197b1-8cf7-4156-b994-8e6c1b2c2f75";
+const INSTAGRAM_URL = "https://www.instagram.com/divino_hamburgueriaa/";
 const MAP_URL =
   "https://www.google.com/maps?q=Av.%20S%C3%A3o%20Sebasti%C3%A3o%2C%20975%20-%20Campos%2C%20Parna%C3%ADba%20-%20PI%2C%2064202-020&output=embed";
 const MAP_DIRECTIONS =
@@ -65,9 +66,14 @@ function Index() {
             <a href="#experiencia" className="nav-link">A Divino</a>
             <a href="#localizacao" className="nav-link">Localização</a>
           </nav>
-          <a className="cta-primary" href={IFOOD_URL} target="_blank" rel="noreferrer">
-            <BagIcon /> <span className="hidden sm:inline">Pedir no iFood</span><span className="sm:hidden">Pedir</span>
-          </a>
+          <div className="flex items-center gap-3">
+            <a href={INSTAGRAM_URL} target="_blank" rel="noreferrer" aria-label="Instagram da Divino" className="flex size-10 items-center justify-center rounded-full border border-border text-muted-foreground transition hover:border-primary hover:text-primary">
+              <InstagramIcon />
+            </a>
+            <a className="cta-primary" href={IFOOD_URL} target="_blank" rel="noreferrer">
+              <BagIcon /> <span className="hidden sm:inline">Pedir no iFood</span><span className="sm:hidden">Pedir</span>
+            </a>
+          </div>
         </div>
       </header>
 
