@@ -207,7 +207,7 @@ function Index() {
           <div className="flex flex-col items-center justify-between gap-8 border-b border-border pb-10 md:flex-row">
             <img src={logoAsset.url} alt="Divino Hamburgueria e Pastelaria" className="h-20 w-40 object-contain" loading="lazy" />
             <div className="flex flex-wrap justify-center gap-7 text-xs font-semibold uppercase text-muted-foreground">
-              <a href="#cardapio" className="hover:text-primary">Cardápio</a><a href="#localizacao" className="hover:text-primary">Localização</a><a href={IFOOD_URL} target="_blank" rel="noreferrer" className="hover:text-primary">iFood</a>
+              <a href="#cardapio" className="hover:text-primary">Cardápio</a><a href="#localizacao" className="hover:text-primary">Localização</a><a href={IFOOD_URL} target="_blank" rel="noreferrer" className="hover:text-primary">iFood</a><a href={INSTAGRAM_URL} target="_blank" rel="noreferrer" className="hover:text-primary">Instagram</a>
             </div>
             <a href={INSTAGRAM_URL} target="_blank" rel="noreferrer" className="flex size-11 items-center justify-center rounded-full border border-border text-muted-foreground transition hover:border-primary hover:text-primary" aria-label="Instagram da Divino" title="@divino_hamburgueriaa no Instagram"><InstagramIcon /></a>
           </div>
