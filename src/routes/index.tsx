@@ -7,7 +7,7 @@ import classicImage from "@/assets/divino-classico.jpg";
 import logoAsset from "@/assets/divino-logo.png.asset.json";
 
 const IFOOD_URL =
-  "https://www.ifood.com.br/delivery/parnaiba-pi/divino-hamburgueria-nossa-senhora-de-fatima/bc4197b1-8cf7-4156-b994-8e6c1b2c2f75?prato=143d27c0-508d-4474-a2ca-c7844bcce1fc";
+  "https://www.ifood.com.br/delivery/parnaiba-pi/divino-hamburgueria-nossa-senhora-de-fatima/bc4197b1-8cf7-4156-b994-8e6c1b2c2f75";
 const MAP_URL =
   "https://www.google.com/maps?q=Av.%20S%C3%A3o%20Sebasti%C3%A3o%2C%20975%20-%20Campos%2C%20Parna%C3%ADba%20-%20PI%2C%2064202-020&output=embed";
 const MAP_DIRECTIONS =
