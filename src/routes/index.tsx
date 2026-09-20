@@ -4,7 +4,7 @@ import pastelImage from "@/assets/divino-pastel.jpg";
 import baconImage from "@/assets/divino-bacon.jpg";
 import comboImage from "@/assets/divino-combo.jpg";
 import classicImage from "@/assets/divino-classico.jpg";
-import logoAsset from "@/assets/divino-logo.png.asset.json";
+import logoImage from "@/assets/divino-logo.png";
 
 const IFOOD_URL =
   "https://www.ifood.com.br/delivery/parnaiba-pi/divino-hamburgueria-nossa-senhora-de-fatima/bc4197b1-8cf7-4156-b994-8e6c1b2c2f75";
@@ -59,7 +59,7 @@ function Index() {
       <header className="relative z-50 border-b border-border/70 bg-background/90 backdrop-blur-xl">
         <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6">
           <a href="#inicio" aria-label="Divino — início" className="flex items-center">
-            <img src={logoAsset.url} alt="Divino Hamburgueria e Pastelaria" className="h-14 w-28 object-contain" />
+            <img src={logoImage} alt="Divino Hamburgueria e Pastelaria" className="h-14 w-28 object-contain" />
           </a>
           <nav aria-label="Navegação principal" className="hidden items-center gap-8 md:flex">
             <a href="#cardapio" className="nav-link">Cardápio</a>
@@ -210,7 +210,7 @@ function Index() {
       <footer className="bg-background py-14">
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
           <div className="flex flex-col items-center justify-between gap-8 border-b border-border pb-10 md:flex-row">
-            <img src={logoAsset.url} alt="Divino Hamburgueria e Pastelaria" className="h-20 w-40 object-contain" loading="lazy" />
+            <img src={logoImage} alt="Divino Hamburgueria e Pastelaria" className="h-20 w-40 object-contain" loading="lazy" />
             <div className="flex flex-wrap justify-center gap-7 text-xs font-semibold uppercase text-muted-foreground">
               <a href="#cardapio" className="hover:text-primary">Cardápio</a><a href="#localizacao" className="hover:text-primary">Localização</a><a href={IFOOD_URL} target="_blank" rel="noreferrer" className="hover:text-primary">iFood</a><a href={INSTAGRAM_URL} target="_blank" rel="noreferrer" className="hover:text-primary">Instagram</a>
             </div>
