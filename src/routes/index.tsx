@@ -132,7 +132,12 @@ function Index() {
               <h2 className="mt-3 font-display text-6xl leading-none sm:text-7xl">ESCOLHA O SEU DIVINO</h2>
               <p className="mt-4 max-w-xl text-muted-foreground">Do clássico ao combo para compartilhar, uma seleção do cardápio para todos os tamanhos de fome.</p>
             </div>
-            <a className="cta-secondary w-fit" href={IFOOD_URL} target="_blank" rel="noreferrer">Ver cardápio completo</a>
+            <a className="cta-menu w-full md:w-auto" href={IFOOD_URL} target="_blank" rel="noreferrer">
+              Ver cardápio completo
+              <svg viewBox="0 0 24 24" aria-hidden="true" className="size-5" fill="none" stroke="currentColor" strokeWidth="2.4">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M4 12h15M13 6l6 6-6 6" />
+              </svg>
+            </a>
           </div>
           <div className="grid gap-8 md:grid-cols-3">
             {menuItems.map((item) => (
