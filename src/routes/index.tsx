@@ -71,7 +71,7 @@ function Index() {
         </div>
       </header>
 
-      <section id="inicio" className="mx-auto max-w-7xl px-4 pb-12 pt-28 sm:px-6 sm:pt-32">
+      <section id="inicio" className="mx-auto max-w-7xl px-4 pb-12 pt-8 sm:px-6 sm:pt-12">
         <div className="grid grid-cols-12 gap-4">
           <div className="relative col-span-12 min-h-[560px] overflow-hidden rounded-md lg:col-span-8 lg:min-h-[650px]">
             <img src={heroImage} alt="Hambúrguer artesanal Divino com cheddar e bacon" width={1536} height={1024} className="absolute inset-0 size-full object-cover" />
