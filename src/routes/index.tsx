@@ -55,7 +55,7 @@ function InstagramIcon() {
 function Index() {
   return (
     <main className="min-h-screen overflow-hidden bg-background text-foreground">
-      <header className="fixed inset-x-0 top-0 z-50 border-b border-border/70 bg-background/90 backdrop-blur-xl">
+      <header className="relative z-50 border-b border-border/70 bg-background/90 backdrop-blur-xl">
         <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6">
           <a href="#inicio" aria-label="Divino — início" className="flex items-center">
             <img src={logoAsset.url} alt="Divino Hamburgueria e Pastelaria" className="h-14 w-28 object-contain" />
@@ -71,7 +71,7 @@ function Index() {
         </div>
       </header>
 
-      <section id="inicio" className="mx-auto max-w-7xl px-4 pb-12 pt-28 sm:px-6 sm:pt-32">
+      <section id="inicio" className="mx-auto max-w-7xl px-4 pb-12 pt-8 sm:px-6 sm:pt-12">
         <div className="grid grid-cols-12 gap-4">
           <div className="relative col-span-12 min-h-[560px] overflow-hidden rounded-md lg:col-span-8 lg:min-h-[650px]">
             <img src={heroImage} alt="Hambúrguer artesanal Divino com cheddar e bacon" width={1536} height={1024} className="absolute inset-0 size-full object-cover" />
