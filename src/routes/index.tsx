@@ -86,9 +86,12 @@ function Index() {
               <span className="eyebrow">Hamburgueria & Pastelaria</span>
               <h1 className="mt-3 max-w-3xl font-display text-6xl leading-[0.88] text-foreground sm:text-8xl lg:text-9xl">O SABOR QUE É DIVINO</h1>
               <p className="mt-5 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">Hambúrgueres marcantes, pastéis crocantes e combos para dividir. Feitos para matar a fome até tarde.</p>
-              <div className="mt-7 flex flex-wrap gap-3">
+              <div className="mt-7 flex flex-wrap items-center gap-3">
                 <a className="cta-primary cta-large" href={IFOOD_URL} target="_blank" rel="noreferrer"><BagIcon /> Pedir agora</a>
                 <a className="cta-secondary cta-large" href="#cardapio">Ver cardápio</a>
+                <a className="flex items-center gap-2 rounded-full border border-border px-5 py-3 text-xs font-semibold uppercase tracking-widest text-muted-foreground transition hover:border-primary hover:text-primary" href={INSTAGRAM_URL} target="_blank" rel="noreferrer">
+                  <InstagramIcon /> <span className="hidden sm:inline">@divino_hamburgueriaa</span><span className="sm:hidden">Instagram</span>
+                </a>
               </div>
             </div>
           </div>
@@ -170,6 +173,11 @@ function Index() {
           <div className="mt-8 grid grid-cols-3 gap-px overflow-hidden rounded-md border border-border bg-border">
             {['Refeição no local', 'Para viagem', 'Entrega'].map((service) => <div key={service} className="bg-card px-3 py-5 text-center text-xs font-semibold uppercase text-muted-foreground sm:text-sm">{service}</div>)}
           </div>
+          <a className="mt-8 inline-flex items-center gap-3 rounded-md border border-border bg-card px-6 py-4 text-sm font-semibold uppercase tracking-widest transition hover:border-primary" href={INSTAGRAM_URL} target="_blank" rel="noreferrer">
+            <span className="flex size-9 items-center justify-center rounded-full bg-primary text-primary-foreground"><InstagramIcon /></span>
+            Seguir no Instagram
+            <span className="text-xs font-normal normal-case tracking-normal text-muted-foreground">@divino_hamburgueriaa</span>
+          </a>
         </div>
       </section>
 
@@ -201,7 +209,7 @@ function Index() {
             <div className="flex flex-wrap justify-center gap-7 text-xs font-semibold uppercase text-muted-foreground">
               <a href="#cardapio" className="hover:text-primary">Cardápio</a><a href="#localizacao" className="hover:text-primary">Localização</a><a href={IFOOD_URL} target="_blank" rel="noreferrer" className="hover:text-primary">iFood</a>
             </div>
-            <span className="flex size-11 items-center justify-center rounded-full border border-border text-muted-foreground" aria-label="Instagram em breve" title="Instagram em breve"><InstagramIcon /></span>
+            <a href={INSTAGRAM_URL} target="_blank" rel="noreferrer" className="flex size-11 items-center justify-center rounded-full border border-border text-muted-foreground transition hover:border-primary hover:text-primary" aria-label="Instagram da Divino" title="@divino_hamburgueriaa no Instagram"><InstagramIcon /></a>
           </div>
           <div className="flex flex-col items-center justify-between gap-3 pt-8 text-center text-xs uppercase text-muted-foreground sm:flex-row sm:text-left">
             <span>© 2026 Divino Hamburgueria e Pastelaria</span><span>Feito com fogo, sabor e tradição</span>
