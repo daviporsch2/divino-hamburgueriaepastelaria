@@ -55,7 +55,7 @@ function InstagramIcon() {
 function Index() {
   return (
     <main className="min-h-screen overflow-hidden bg-background text-foreground">
-      <header className="fixed inset-x-0 top-0 z-50 border-b border-border/70 bg-background/90 backdrop-blur-xl">
+      <header className="relative z-50 border-b border-border/70 bg-background/90 backdrop-blur-xl">
         <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6">
           <a href="#inicio" aria-label="Divino — início" className="flex items-center">
             <img src={logoAsset.url} alt="Divino Hamburgueria e Pastelaria" className="h-14 w-28 object-contain" />
