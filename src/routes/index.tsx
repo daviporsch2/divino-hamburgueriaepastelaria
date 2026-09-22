@@ -104,8 +104,8 @@ function Index() {
                 <p className="mt-3 text-sm leading-relaxed text-muted-foreground">Dois burgers, cheddar cremoso e bacon crocante em uma combinação sem economia.</p>
               </div>
               <div className="mt-6 flex items-end justify-between gap-4">
-                <span className="font-display text-3xl text-primary">R$ 35,00</span>
-                <a href="#cardapio" className="text-link">Ver combos</a>
+                <span className="font-display text-3xl text-primary">R$ 30,00</span>
+                <Link to="/cardapio" className="text-link">Ver combos</Link>
               </div>
             </article>
             <div className="relative min-h-[320px] overflow-hidden rounded-md">
@@ -132,12 +132,12 @@ function Index() {
               <h2 className="mt-3 font-display text-6xl leading-none sm:text-7xl">ESCOLHA O SEU DIVINO</h2>
               <p className="mt-4 max-w-xl text-muted-foreground">Do clássico ao combo para compartilhar, uma seleção do cardápio para todos os tamanhos de fome.</p>
             </div>
-            <a className="cta-menu w-full md:w-auto" href={IFOOD_URL} target="_blank" rel="noreferrer">
+            <Link className="cta-menu w-full md:w-auto" to="/cardapio">
               Ver cardápio completo
               <svg viewBox="0 0 24 24" aria-hidden="true" className="size-5" fill="none" stroke="currentColor" strokeWidth="2.4">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M4 12h15M13 6l6 6-6 6" />
               </svg>
-            </a>
+            </Link>
           </div>
           <div className="grid gap-8 md:grid-cols-3">
             {menuItems.map((item) => (
