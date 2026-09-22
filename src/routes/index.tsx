@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import heroImage from "@/assets/divino-hero.jpg";
 import pastelImage from "@/assets/divino-pastel.jpg";
 import baconImage from "@/assets/divino-bacon.jpg";
@@ -15,9 +15,9 @@ const MAP_DIRECTIONS =
   "https://www.google.com/maps/dir/?api=1&destination=Av.%20S%C3%A3o%20Sebasti%C3%A3o%2C%20975%20-%20Campos%2C%20Parna%C3%ADba%20-%20PI%2C%2064202-020";
 
 const menuItems = [
-  { name: "Divino Clássico", price: "R$ 23,00", description: "Burger clássico da casa, batata P e refrigerante em lata.", image: classicImage },
-  { name: "Divino Bacon 2.0", price: "R$ 35,00", description: "Dois burgers, cheddar e uma porção generosa de bacon crocante.", image: baconImage },
-  { name: "Combo Casal O Divino", price: "R$ 75,00", description: "Dois burgers O Divino, batata G e refrigerante de 1 litro.", image: comboImage },
+  { name: "Divino Clássico", price: "R$ 15,00", description: "Pão, carne smash 80g, queijo e molho de sua preferência.", image: classicImage },
+  { name: "Divino Bacon 2.0", price: "R$ 30,00", description: "Dois smash 80g, queijo, cheddar, bacon, cebola caramelizada, alface e tomate.", image: baconImage },
+  { name: "Combo Casal O Divino", price: "R$ 90,00", description: "Dois O Divino, batata G e refrigerante de 1 litro.", image: comboImage },
 ];
 
 export const Route = createFileRoute("/")({
@@ -62,7 +62,7 @@ function Index() {
             <img src={logoImage} alt="Divino Hamburgueria e Pastelaria" className="h-14 w-28 object-contain" />
           </a>
           <nav aria-label="Navegação principal" className="hidden items-center gap-8 md:flex">
-            <a href="#cardapio" className="nav-link">Cardápio</a>
+            <Link to="/cardapio" className="nav-link">Cardápio</Link>
             <a href="#experiencia" className="nav-link">A Divino</a>
             <a href="#localizacao" className="nav-link">Localização</a>
           </nav>
@@ -104,8 +104,8 @@ function Index() {
                 <p className="mt-3 text-sm leading-relaxed text-muted-foreground">Dois burgers, cheddar cremoso e bacon crocante em uma combinação sem economia.</p>
               </div>
               <div className="mt-6 flex items-end justify-between gap-4">
-                <span className="font-display text-3xl text-primary">R$ 35,00</span>
-                <a href="#cardapio" className="text-link">Ver combos</a>
+                <span className="font-display text-3xl text-primary">R$ 30,00</span>
+                <Link to="/cardapio" className="text-link">Ver combos</Link>
               </div>
             </article>
             <div className="relative min-h-[320px] overflow-hidden rounded-md">
@@ -132,12 +132,12 @@ function Index() {
               <h2 className="mt-3 font-display text-6xl leading-none sm:text-7xl">ESCOLHA O SEU DIVINO</h2>
               <p className="mt-4 max-w-xl text-muted-foreground">Do clássico ao combo para compartilhar, uma seleção do cardápio para todos os tamanhos de fome.</p>
             </div>
-            <a className="cta-menu w-full md:w-auto" href={IFOOD_URL} target="_blank" rel="noreferrer">
+            <Link className="cta-menu w-full md:w-auto" to="/cardapio">
               Ver cardápio completo
               <svg viewBox="0 0 24 24" aria-hidden="true" className="size-5" fill="none" stroke="currentColor" strokeWidth="2.4">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M4 12h15M13 6l6 6-6 6" />
               </svg>
-            </a>
+            </Link>
           </div>
           <div className="grid gap-8 md:grid-cols-3">
             {menuItems.map((item) => (
@@ -212,7 +212,7 @@ function Index() {
           <div className="flex flex-col items-center justify-between gap-8 border-b border-border pb-10 md:flex-row">
             <img src={logoImage} alt="Divino Hamburgueria e Pastelaria" className="h-20 w-40 object-contain" loading="lazy" />
             <div className="flex flex-wrap justify-center gap-7 text-xs font-semibold uppercase text-muted-foreground">
-              <a href="#cardapio" className="hover:text-primary">Cardápio</a><a href="#localizacao" className="hover:text-primary">Localização</a><a href={IFOOD_URL} target="_blank" rel="noreferrer" className="hover:text-primary">iFood</a><a href={INSTAGRAM_URL} target="_blank" rel="noreferrer" className="hover:text-primary">Instagram</a>
+              <Link to="/cardapio" className="hover:text-primary">Cardápio</Link><a href="#localizacao" className="hover:text-primary">Localização</a><a href={IFOOD_URL} target="_blank" rel="noreferrer" className="hover:text-primary">iFood</a><a href={INSTAGRAM_URL} target="_blank" rel="noreferrer" className="hover:text-primary">Instagram</a>
             </div>
             <a href={INSTAGRAM_URL} target="_blank" rel="noreferrer" className="flex size-11 items-center justify-center rounded-full border border-border text-muted-foreground transition hover:border-primary hover:text-primary" aria-label="Instagram da Divino" title="@divino_hamburgueriaa no Instagram"><InstagramIcon /></a>
           </div>
