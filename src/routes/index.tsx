@@ -62,7 +62,7 @@ function Index() {
             <img src={logoImage} alt="Divino Hamburgueria e Pastelaria" className="h-14 w-28 object-contain" />
           </a>
           <nav aria-label="Navegação principal" className="hidden items-center gap-8 md:flex">
-            <a href="#cardapio" className="nav-link">Cardápio</a>
+            <Link to="/cardapio" className="nav-link">Cardápio</Link>
             <a href="#experiencia" className="nav-link">A Divino</a>
             <a href="#localizacao" className="nav-link">Localização</a>
           </nav>
@@ -212,7 +212,7 @@ function Index() {
           <div className="flex flex-col items-center justify-between gap-8 border-b border-border pb-10 md:flex-row">
             <img src={logoImage} alt="Divino Hamburgueria e Pastelaria" className="h-20 w-40 object-contain" loading="lazy" />
             <div className="flex flex-wrap justify-center gap-7 text-xs font-semibold uppercase text-muted-foreground">
-              <a href="#cardapio" className="hover:text-primary">Cardápio</a><a href="#localizacao" className="hover:text-primary">Localização</a><a href={IFOOD_URL} target="_blank" rel="noreferrer" className="hover:text-primary">iFood</a><a href={INSTAGRAM_URL} target="_blank" rel="noreferrer" className="hover:text-primary">Instagram</a>
+              <Link to="/cardapio" className="hover:text-primary">Cardápio</Link><a href="#localizacao" className="hover:text-primary">Localização</a><a href={IFOOD_URL} target="_blank" rel="noreferrer" className="hover:text-primary">iFood</a><a href={INSTAGRAM_URL} target="_blank" rel="noreferrer" className="hover:text-primary">Instagram</a>
             </div>
             <a href={INSTAGRAM_URL} target="_blank" rel="noreferrer" className="flex size-11 items-center justify-center rounded-full border border-border text-muted-foreground transition hover:border-primary hover:text-primary" aria-label="Instagram da Divino" title="@divino_hamburgueriaa no Instagram"><InstagramIcon /></a>
           </div>
