@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import heroImage from "@/assets/divino-hero.jpg";
 import pastelImage from "@/assets/divino-pastel.jpg";
 import baconImage from "@/assets/divino-bacon.jpg";
@@ -15,9 +15,9 @@ const MAP_DIRECTIONS =
   "https://www.google.com/maps/dir/?api=1&destination=Av.%20S%C3%A3o%20Sebasti%C3%A3o%2C%20975%20-%20Campos%2C%20Parna%C3%ADba%20-%20PI%2C%2064202-020";
 
 const menuItems = [
-  { name: "Divino Clássico", price: "R$ 23,00", description: "Burger clássico da casa, batata P e refrigerante em lata.", image: classicImage },
-  { name: "Divino Bacon 2.0", price: "R$ 35,00", description: "Dois burgers, cheddar e uma porção generosa de bacon crocante.", image: baconImage },
-  { name: "Combo Casal O Divino", price: "R$ 75,00", description: "Dois burgers O Divino, batata G e refrigerante de 1 litro.", image: comboImage },
+  { name: "Divino Clássico", price: "R$ 15,00", description: "Pão, carne smash 80g, queijo e molho de sua preferência.", image: classicImage },
+  { name: "Divino Bacon 2.0", price: "R$ 30,00", description: "Dois smash 80g, queijo, cheddar, bacon, cebola caramelizada, alface e tomate.", image: baconImage },
+  { name: "Combo Casal O Divino", price: "R$ 90,00", description: "Dois O Divino, batata G e refrigerante de 1 litro.", image: comboImage },
 ];
 
 export const Route = createFileRoute("/")({
